@@ -17,4 +17,9 @@ Pod::Spec.new do |s|
   s.ios.dependency 'Crashlytics'
   s.osx.dependency 'Crashlytics-OSX'
 
+  s.subspec 'Swift' do |ss|
+      ss.ios.deployment_target = '8.0'
+      ss.source_files  = 'Source', 'Source/CrashlyticsLogger.swift'
+  end
+
 end
